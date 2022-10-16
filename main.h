@@ -48,10 +48,6 @@ int prinnoct(va_list arguments, char *buf, unsigned int ibuf);
 int prinnhex(va_list arguments, char *buf, unsigned int ibuf);
 int prinnupx(va_list arguments, char *buf, unsigned int ibuf);
 int prinsint(va_list arguments, char *buf, unsigned int ibuf);
-int get_flags(const char *format, int *i);
-int get_width(const char *format, int *i, va_list list);
-int get_precision(const char *format, int *i, va_list list);
-int get_size(const char *format, int *i);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 int ev_print_func(const char *s, int index);
 unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
@@ -61,5 +57,11 @@ char *fill_oct_array(char *bnr, char *oct);
 char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
+
+/* Funciotns to handle other specifiers */
+int print_flags(const char *format, int *i);
+int print_width(const char *format, int *i, va_list list);
+int print_precision(const char *format, int *i, va_list list);
+int print_size(const char *format, int *i);
 
 #endif
