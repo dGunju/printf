@@ -12,7 +12,7 @@ int ev_print_func(const char *s, int index)
 		{"d", print_int}, {"b", print_bnr}, {"u", print_unt},
 		{"o", print_oct}, {"x", print_hex}, {"X", print_upx},
 		{"S", print_usr}, {"p", print_add}, {"li", prinlint},
-/		{"ld", prinlint}, {"lu", prinlunt}, {"lo", prinloct},
+		{"ld", prinlint}, {"lu", prinlunt}, {"lo", prinloct},
 		{"lx", prinlhex}, {"lX", prinlupx}, {"hi", prinhint},
 		{"hd", prinhint}, {"hu", prinhunt}, {"ho", prinhoct},
 		{"hx", prinhhex}, {"hX", prinhupx}, {"#o", prinnoct},
