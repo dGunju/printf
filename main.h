@@ -58,10 +58,4 @@ char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
 
-/* Funciotns to handle other specifiers */
-int print_flags(const char *format, int *i);
-int print_width(const char *format, int *i, va_list list);
-int print_precision(const char *format, int *i, va_list list);
-int print_size(const char *format, int *i);
-
 #endif
